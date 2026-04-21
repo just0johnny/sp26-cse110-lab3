@@ -9,6 +9,11 @@
         content="The MyCrowSaw Engineer Meeting Minutes summarizes the content of meetings for absentees or those requiring a refresh in memory."
         />
     <link rel="icon" href="crowfavicon.png" />
+    <link rel="stylesheet" href="crowstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -23,6 +28,10 @@
         BreadCrumbs App Brainstorm 
     </h1>
     <hr />
+    <section id="ignore">
+        This text should be hidden!
+    </section>
+    <section class="toc">
     <h2>
         Table of Contents:
     </h2>
@@ -37,24 +46,31 @@
                 <li><a href="#survey">Survey</a></li>
             </ul>
         </nav>
+    </section>
     <hr />
-    <section>
-    <h2 id="logistics">
+    <section id="logistics">
+    <h2>
         Meeting Logistics:
     </h2>
+        <div class="item item-1" id="minutes">
         <h3>
             Number of minutes for meeting: 42 minutes
         </h3>
+        </div>
+        <div class="item item-2" id="people">
         <h3>
             Number of people attended: 20 attendees
         </h3>
+        </div>
 
+        <div class="item item-3">
         Honorable Mentions of Members:
         <ul>
             <li><a href="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fDB8fHww">Jack</a> (<em>very</em> cute dog!)</li> 
             <li>Nick</li>
             <li>Lisa</li>
         </ul>
+        </div>
     </section>
     <hr />
     <main>
@@ -91,9 +107,8 @@
         </details>
         <br />
     </main>
-    <hr />
-    <div class="other-stuff">
-        <h2 id="survey">
+    <div class="other-stuff" id="survey">
+        <h2 id="survey-title">
             Optional Survey:
         </h2>
         <form id="survey-form">
@@ -131,7 +146,7 @@
             Describe any other experiences or thoughts with the app: <br />
             <textarea>Write here...</textarea> <br /> <br />
 
-            <button>Submit</button>
+            <button class="submitbtn">Submit</button>
         </form>
     </div>
     <hr />
