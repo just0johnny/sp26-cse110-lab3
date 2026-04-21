@@ -1,3 +1,4 @@
+/* C*/
 .changa-one-regular {
   font-family: "Changa One", sans-serif;
   font-weight: 400;
@@ -10,6 +11,12 @@
   font-style: italic;
 }
 
+/* Style that uses the universal selector to apply it everywhere */
+* {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Style for the body, which is essentially the entire page background */
 body {
@@ -48,7 +55,6 @@ h1 {
     margin: 10px auto 10px auto;
 
     display: block; /* Doesn't change much since it's already on its own line, but it should be formatted to be on its own line */
-    font-family: "Changa One", sans-serif;
 }
 
 /* This is a test for display: none, which basically should hide an element */
@@ -73,6 +79,30 @@ section {
     gap: 10px;
 }
 
+/* Style that uses the child combinator */
+#logistics > #minutes {
+    font-size: 36px;
+}
+
+/* Style that uses the adjacent sibling combinator */
+#minutes + #people {
+    font-size: 36px;
+}
+
+/* Style that uses the general sibling combinator */
+#minutes ~ #honor-mentions {
+    font-size: 36px;
+}
+
+/* Style that uses an attribute selector for the ToC */
+[class="menu"] {
+    font-size: 36px;
+}
+
+/* Style that uses a combination fo two selectors */
+p.summary.primary {
+    font-size: 24px;
+}
 
 /* Style for the main part of the page, which is meeting details */
 main {
@@ -86,8 +116,16 @@ main {
     justify-content: space-evenly;
 }
 
+/* Style for summary that uses flexbox */
 #summary {
     flex-grow: 10;
+}
+
+/* Style for the text to become italic with the font */
+.lookhere {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* Style for all subheadings of h2 */
@@ -99,7 +137,6 @@ h2 {
 
 /* Style for the survey that doesn't really relate to the meeting page */
 #survey {
-    color: black;
     background-color: white;
 
     border: 10px solid black;
@@ -117,16 +154,32 @@ h2 {
     width: 5in;
     max-height: 9in;
     max-width: 7.5in;
+
+    /* Uses a nested selector to change some of the internal text of the survey form */
+    & #in-form {
+        color: black;
+        font-size: 18px;
+    }
+}
+
+/* Style that uses the selector list to apply color to text to both the title and the form itself, slightly redundant but fixes my earlier issue */
+#survey, #survey-title {
+    color: #895129;
+}
+
+/* Style that uses the descendant combinator to apply the background to only the child */
+#survey #survey-form {
+    background-color: hsla(42 42 86);
+}
+
+/* Style that uses the has selector */
+h2:has(+ p) {
+    font-size: 48px;
 }
 
 /* If they hold click over a button (there's only the submit one here), it'll turn yellow */
 button:active {
     background-color: yellow;
-}
-
-/* Style for the title of the survey */
-#survey-title {
-    color: black;
 }
 
 /* The button hover will only take effect on devices with mice, so not tablets and other smaller screens */
