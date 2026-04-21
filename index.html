@@ -49,21 +49,21 @@
     </section>
     <hr />
     <section id="logistics">
-    <h2>
+    <h2 id="log-title">
         Meeting Logistics:
     </h2>
-        <div class="item item-1" id="minutes">
+        <div class="item" id="minutes">
         <h3>
             Number of minutes for meeting: 42 minutes
         </h3>
         </div>
-        <div class="item item-2" id="people">
+        <div class="item" id="people">
         <h3>
             Number of people attended: 20 attendees
         </h3>
         </div>
 
-        <div class="item item-3">
+        <div class="item" id="honor-mentions">
         Honorable Mentions of Members:
         <ul>
             <li><a href="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fDB8fHww">Jack</a> (<em>very</em> cute dog!)</li> 
@@ -77,7 +77,7 @@
     <h2 id="summary">
         Meeting Agenda:
     </h2>
-    <p>
+    <p class="summary primary">
         In the meeting several <b>key</b> features for the <i>BreadCrumbs</i> app are to be brainstormed. <br />
         Some ideas that were well received last meeting included: 
     </p>
@@ -87,7 +87,7 @@
             <li>Donate Crumbs</li>
         </ol>
 
-    <p>
+    <p class="lookhere">
         Look at one of the consumers enjoying a piece of bread! This is what we aim for! Also hear their customer review of the bread below! <br />
     </p>
         <video controls width="250">
@@ -115,7 +115,7 @@
             Enter a name or alias:
             <input type="text"> <br /> <br />
 
-            <fieldset>
+            <fieldset id="in-form">
                 Choose your current status: <br />
 
                 <input type="radio"> New Crow Consumer <br />
@@ -135,7 +135,7 @@
                 <option>over 6 months</option>
             </select> <br /> <br />
 
-            <fieldset>
+            <fieldset id="in-form">
                 Choose all that apply: <br />
 
                 <input type="checkbox"> I am a single crow. <br />
