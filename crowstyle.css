@@ -157,7 +157,7 @@ h2 {
 
     /* Uses a nested selector to change some of the internal text of the survey form */
     & #in-form {
-        color: aqua;
+        color: black;
         font-size: 18px;
     }
 }
