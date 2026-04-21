@@ -74,7 +74,7 @@ section {
 #logistics {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
     gap: 10px;
 }
@@ -156,8 +156,8 @@ h2 {
     max-width: 7.5in;
 
     /* Uses a nested selector to change some of the internal text of the survey form */
-    #in-form {
-        color: black;
+    & #in-form {
+        color: aqua;
         font-size: 18px;
     }
 }
