@@ -51,7 +51,7 @@ h1 {
     border-color: #895129;
     border-width: 10px; /* Used 1/3 unique absolute unit */
     border-radius: 10px;
-    padding: 1em, 1em, 1em, 1em; /* Used 1/3 unique relative unit */
+    padding: 1em 1em 1em 1em; /* Used 1/3 unique relative unit */
     margin: 10px auto 10px auto;
 
     display: block; /* Doesn't change much since it's already on its own line, but it should be formatted to be on its own line */
@@ -74,7 +74,7 @@ section {
 #logistics {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
     gap: 10px;
 }
